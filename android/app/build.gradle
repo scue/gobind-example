@@ -24,6 +24,9 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*.aar'], dir: '../../hello')
     implementation 'com.android.support:appcompat-v7:22.1.1'
-    implementation project(':hello')
+    // implementation project(':hello')
+
+    implementation 'com.alibaba:fastjson:1.1.68.android'
 }
