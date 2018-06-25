@@ -12,6 +12,10 @@ func (c *Counter) Inc() {
 	c.Value++
 }
 
+func (c *Counter) Dec() {
+	c.Value--
+}
+
 func NewCounter() *Counter {
 	return &Counter{defaultValue}
 }
